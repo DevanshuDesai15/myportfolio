@@ -10,10 +10,15 @@ body{
 }
 
 /**************************NavBar****************************/
+
+nav{
+  z-index: 2;
+}
+
 .navbar-brand{
   color: var(--primarywhite)  !important;
   font-style: italic;
-  font-weight: 500;
+  font-weight: 500; 
 }
 /* -----NAV LINKS----- */
 nav a.nav-link{
@@ -35,4 +40,60 @@ nav ul li{
 }
 .navbar-nav >li>a:hover{
   border-top: 3px solid var(--orange);
+}
+
+/**************************Header****************************/
+.header-wraper{
+  background-color: #030945;
+  background-position: center;
+  height: 90vh;
+}
+.main-info{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  z-index: 1;
+}
+
+.main-info h1{
+  color: var(--orange);
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+}
+
+/*-------TYPED TEXT---------*/
+.typed-text{
+  font-size: 20px;
+  color: #f9ab00;
+}
+/*-------HEADER MAIN OFFER BUTTON---------*/
+.btn-main{
+  border: 1px solid red;  
+  border-radius: 10px;
+  text-transform: uppercase;
+  padding: 10px 12px 12px 12px;
+  color: var(--primarywhite);
+  margin: 40px;
+}
+
+.btn-main:hover{
+  text-decoration: none;
+  color: orange;
+  transition: .2s ease-in-out;
+}
+
+/*-------HEADER MAIN OFFER BUTTON---------*/
+.tsparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
 }
